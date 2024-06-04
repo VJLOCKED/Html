@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add to cart Widget</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: gray;
+                padding: 10px;
+                align: center;
+                place-content: center;
+                height: 500px;  
+                
+             }
+            .lol{
+                background-color: antiquewhite;
+                padding: 10px;   
+                overflow: hidden; 
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px; 
+                button{
+                    text-align: flex;
+                    justify-content: center;
+                    border: none;
+                    color: red;
+                    text-align: center;
+                    width: 50px;
+                    height: 50px;
+                    font-size: 20px;
+                    background: none;
+                }
+                input {
+                    background: none;
+                    border: none;
+                    text-align: center;
+
+                }
+            }
+            
+        </style>
+    </head>
+    <body>      
+
+     <script type="text/javascript">
+        function increment() {
+            document.getElementsByName("number")[0].value++;
+        }
+        function decrement() {
+            document.getElementsByName("number")[0].value--;
+        }
+        </script>
+        <div class="lol">
+        <button onclick="decrement()">-</button>
+        <input type="number" name="number" placeholder="0" min=0>
+        <button onclick="increment()">+</button>
+        </div>
+    </body>
+</html>
