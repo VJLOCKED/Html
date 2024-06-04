@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>      
+
+        <script type="text/javascript">
+           function increment() {
+               document.getElementsByName("number")[0].value++;
+           }
+           function decrement() {
+               document.getElementsByName("number")[0].value--;
+           }
+           </script>
+           <div class="lol">
+           <button onclick="decrement()" style="font-size: large;">-</button>
+           <input type="number" name="number" min=0 step="1" value="0">
+           <button onclick="increment()" style="font-size: large;">+</button>
+           </div>
+       </body>
+
+       </html>
